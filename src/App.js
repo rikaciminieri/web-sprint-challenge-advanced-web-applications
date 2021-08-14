@@ -13,6 +13,9 @@ function App() {
           <a data-testid="logoutButton" href="#">logout</a>
         </header>
       </div>
+      <Route path="/login">
+        <Login />
+      </Route>
     </Router>
   );
 }
