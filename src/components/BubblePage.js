@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import Bubbles from "./Bubbles";
 import ColorList from "./ColorList";
-import fetchColorService from "../services/fetchColorService";
+import {fetchColorService} from "../services/fetchColorService";
 import axiosWithAuth from "../helpers/axiosWithAuth";
 
 const BubblePage = () => {
@@ -14,7 +14,7 @@ const BubblePage = () => {
   useEffect(() => {
     fetchColorService()
       .then((res) => {
-        // console.log(res)
+        console.log(res)
         setColors(res.data);
       })
       .catch((err) => console.log(err));
