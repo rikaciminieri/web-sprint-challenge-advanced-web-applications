@@ -34,7 +34,7 @@ function App() {
         <Route path="/">
           <Redirect to="/login" />
         </Route>
-        <PrivateRoute path="/bubble">
+        <PrivateRoute path="/bubbles">
           <BubblePage />
         </PrivateRoute>
       </div>

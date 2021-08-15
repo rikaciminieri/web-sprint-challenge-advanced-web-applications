@@ -24,7 +24,7 @@ const Login = () => {
       .then((res) => {
         localStorage.setItem("token", res.data.payload);
         setError("");
-        push("/bubble");
+        push("/bubbles");
         // console.log(res);
       })
       .catch((err) => {
